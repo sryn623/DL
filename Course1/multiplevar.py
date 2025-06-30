@@ -31,3 +31,6 @@ def predict_single_loop(x, w, b):
 x_vec = X_train[0,:]
 print(f"x_vec shape {x_vec.shape}, x_vec value: {x_vec}")
 
+# make a prediction
+f_wb = predict_single_loop(x_vec, w_init, b_init)
+print(f"f_wb shape {f_wb.shape}, prediction: {f_wb}")
